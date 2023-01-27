@@ -20,3 +20,5 @@ jobs:
           script: |
             cd client
             node -v
+            nvm use --lts
+            node -v

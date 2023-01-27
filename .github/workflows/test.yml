@@ -18,5 +18,6 @@ jobs:
           key: ${{ secrets.AWS_SSH_KEY }}
           port: ${{ secrets.AWS_PORT }}
           script: |
+            echo "this is a test"
             node -v
-            bash build.sh
+            source ~/.bashrc

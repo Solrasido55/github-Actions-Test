@@ -18,7 +18,5 @@ jobs:
           key: ${{ secrets.AWS_SSH_KEY }}
           port: ${{ secrets.AWS_PORT }}
           script: |
-            source ~/.bashrc
-            source ~/.zshrc
-            nvm -v
             node -v
+            bash build.sh

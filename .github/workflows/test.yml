@@ -19,5 +19,5 @@ jobs:
           port: ${{ secrets.AWS_PORT }}
           script: |
             echo "this is a test"
+            nvm use --lts
             node -v
-            source ~/.bashrc
